@@ -26,3 +26,15 @@ myTestFunction2();
 myTestFunction2();
 myTestFunction2();
 myTestFunction2();
+
+
+function defaultValue(string $color = 'green')
+{
+  echo '<br />';
+  echo $color;
+}
+
+defaultValue();
+
+// override
+defaultValue('red');

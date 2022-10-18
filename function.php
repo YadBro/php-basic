@@ -49,3 +49,12 @@ function argByReference(int &$num1)
 $num = 10;
 argByReference($num);
 echo $num;
+
+// ADVANCE
+function returnString(int $num1): int
+{
+  return $num1;
+}
+
+echo '<br />';
+var_dump(returnString(4));

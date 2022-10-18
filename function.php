@@ -38,3 +38,14 @@ defaultValue();
 
 // override
 defaultValue('red');
+
+
+function argByReference(int &$num1)
+{
+  echo '<br />';
+  $num1 += 5;
+}
+
+$num = 10;
+argByReference($num);
+echo $num;
